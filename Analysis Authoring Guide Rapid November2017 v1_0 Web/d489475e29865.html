@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>State Machine Diagram (Core Notations)Introduction oNext: Generic UML Modelling Concepts</title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="StateDiagramCoreNotations-386AE8C6"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.61.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.61.1"
+              lang="en-US"
+              xml:lang="en-US">State Machine Diagram (Core Notations)
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; "></span><span xmlns="" style="font-family: Arial; font-weight: bold; "></span>               </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Generic UML Modelling Concepts</a></span></span></div>
+         </div><span class=" x-titlealts-2-0" lang="en-US" xml:lang="en-US"></span><div class=" x-prolog-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US" xml:lang="en-US"><span class=" x-keywords-2-0" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="StateMachineDiagramCoreNotations-2D4F706B"></a></span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">This table outlines the individual Elements, Flows and other modelling concepts as well as Core Notations that may be utilised
+                  in the elaboration of UML State Machine Diagrams (for an example of most of these notations in context, see the figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">activity diagram example</span>):</span></div>
+            <div class=" x-table-1-0" id="styler-id1.1.1.61.5.2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">
+                  <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                         class=" x-tgroup-1-0"
+                         style="width: 100%; ">
+                     <colgroup>
+                        <col style="width: 32.20338983050847%; " />
+                        <col style="width: 28.53107344632768%; " />
+                        <col style="width: 39.26553672316384%; " />
+                     </colgroup>
+                     <thead class=" x-thead-1-0"
+                            style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                        <tr class=" x-row-1-0">
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"> <span><span><span style="color: #ffffff; ">Entity</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#3549D9" class="entry-in-tbody"
+                               style="text-align: left; background-color: #3549D9; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Definition / Context</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Core Notations</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Initial Elements:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/18dcf1674fb2c3416714e19a9f1361ce4aad55dd.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Initial Elements represent a pseudo-state used to denote the default state of a Composite State.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Initial Elements are a small solid black circle element.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Labelled &#8216;Initial&#8217;, along with any other identifying name for this element.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">There can be one Initial vertex in each Region of the Composite State.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">State Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/8a2f83994a2f4e9814c3227e3d053621ec4bd186.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A State represents a situation where some invariant condition holds; this condition can be static (waiting for an event) or
+                                             dynamic (performing a set of activities).</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">There are three notations for State Elements: A <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Simple State</span></span>, a <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Composite State</span></span>, an <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Orthogonal State</span></span> and a <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Submachine State</span></span>.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">State Elements are represented as round corner boxes with the name of the state showing inside.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">State Elements can display either with or without a line across them.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">A Simple State</span></span>: has no internal vertices or Transitions.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">A Composite State</span></span>: contains exactly one Region.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">An Orthogonal State</span></span>: contains multiple Regions.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">A Submachine State</span></span>: refers to an entire StateMachine.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">State Machine Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/c40cf1784ae8f1d87c933fbe616c046e02166179.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A State Machine Element is a container for groups of related State Elements.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">State Machine Elements are represented as a State Element with a "spectacle" symbol where the decomposition is hidden, or
+                                 it can be visible in the "parent" diagram.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">State Machine Elements link to a &#8216;composite&#8217; diagram to elaborate the states relating to the  &#8216;parent&#8217; state.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Final State:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/51d4169cc3818fafdcb1452ab6e5e17804f0b25f.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Final State is a special kind of state signifying that the enclosing region is completed. If the enclosing region is directly
+                                             contained in a State Machine and all other regions in the State Machine also are completed, then it means that the entire
+                                             State Machine is completed.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Final State Element is represented as a small solid black circle enclosed within a circle outline.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">A Final State is labelled "Final&#8217; or any other identifying name to indicate its state. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Terminate</span></span>:
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/21071b70c315688370b244084c68aadb47b26c7a.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Terminate is a pseudo-state indicating that upon entry of its pseudo-state, the State Machine's execution ends.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Terminate is represented as a diagonal cross labelled terminate.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">It has a single incoming flow. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Choice Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/c7871ade5b50821efad996272967368218d8403a.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">The Choice Element is a pseudo-state used to compose complex transitional paths, where the outgoing transition path is decided
+                                             by dynamic, run-time conditions.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">It evaluates the Guard Conditions of the Triggers of its outgoing Transitions to select only one outgoing Transition. The
+                                          decision on which path to take may be a function of the results of prior actions performed in the same run-to-completion step.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Choice Element is represented as a filled diamond shape. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">It is labelled with the decision needed as a question or condition.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The Guard condition are displayed on the outgoing Flows from a Decision Element.  </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11 x-p-2-33" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Example</span>:  [yes], [no] or other stated condition [do ...]. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Junction Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/a764fdf03749115c4d1cb1effe7a602e11df04c6.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Junction Element is a pseudo-state used to combine or merge multiple paths into a shared transition path; it is used to
+                                             design complex transitional paths.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">A Junction can alternately split an incoming path into multiple paths, similar to a Fork pseudo-state. Unlike Forks or Joins,
+                                          Junctions can apply guards to each incoming or outgoing transition, such that if the guard expression is <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">false</span>, the transition is disabled. 
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">The Junction Element is represented as a small solid black circle.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The element should be labelled "junction" .</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Transitions from Junction Elements may also have Guard Conditions. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Regions within State Elements:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/b0d9c5868f52c99c39be9f2a27f27bf3486de4e7.png"
+                                         style="max-width: 100%; "
+                                         width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Regions within State Elements are used to model concurrently active states for Composite State Elements, or State Machine
+                                             Elements.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Regions within State Elements are denoted by dotted line in the state element.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The region can also be named to identify its usage/</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Each region of a Composite State may have an Initial pseudo-state and a Final state. Alternatively Entry and Exit points may
+                                 be used. 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Only one State can be active in each region.   </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Multiple Transitions can occur from a single event dispatch, so long as the similarly-triggered Transitions are divided by
+                                 Regions.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A Transition to the enclosing State represents a Transition to the initial pseudo-state in each region. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">A newly-created object takes its topmost default Transitions, originating from the topmost initial pseudo-states of each region.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Fork Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/2b753d01185093d5970eb0d9f11df3ea1248d632.png"
+                                         style="max-width: 100%; "
+                                         width="251" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Forks are pseudo-state elements that serve to split an incoming Transition into two or more outgoing Transitions.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">They can be used with orthogonal regions of a Composite State.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Fork is represented as a short heavy bar.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The bar may have one or more Transitions from the bar to other states, but only one incoming Transition.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A label defining the Transition may be shown near the bar.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The Transitions outgoing from a Fork vertex must <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">not</span></span> have Guard Conditions or Triggers. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Join Element:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/6cf368707c1d2a5b5369302f6ab9fd8ad7f2cdbc.png"
+                                         style="max-width: 100%; "
+                                         width="251" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Joins are pseudo-state elements that merges several Transitions into a single ongoing Transition.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">These can originate from vertices in different orthogonal regions of a Composite State.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Join is represented as a short heavy bar.  </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The bar may have one or more incoming Transitions from various states to the bar, but only one ongoing Transition.  </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A label defining the Transition may be shown near the bar. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The Transitions incoming to a Join vertex must <span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">not</span></span> have Guard Conditions or Triggers. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">History Sub-States:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/aef5630c30808e8b77dd19c901392f4e97ee1f5f.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A History sub-state is used to represent the most recently active sub-state of a state; there are two types of History pseudo-state:
+                                             &#8216;<span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Shallow</span></span>&#8217; and &#8216;<span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Deep</span></span>&#8217; History sub-states.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">At most one deep history and one shallow history can dwell within a composite state.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A History applies to the region of the state that directly encloses it. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Further notations are defined below for each type of History sub-state. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Shallow History Sub-State</span></span>:
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">See figure at &#8216;History Sub-States&#8217;</span>) 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Shallow History sub-state is used to represent the most recently active sub-state of a Composite State; this pseudo-state
+                                             does not recurse into this sub-state's active configuration, should one exist.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Shallow History sub-state is represented by a small circle containing: &#8216;H&#8217; (<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">a letter H</span>).    
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">A single connector can be used to depict the default shallow History state, in case the Composite State has never been entered.
+                                 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Deep History Sub-State</span></span>:
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">See figure at &#8216;History Sub-States</span>&#8217;) 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Deep History sub-state reflects the most recent active configuration of the Composite State. This includes active sub-states
+                                             of all regions, and recurses into those sub-states' active sub-states, should they exist.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Deep History sub-state is represented by a small circle containing: &#8216;H*&#8217; (<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">a letter H with a star symbol</span>).  
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">. 
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Transitions on State Machine Diagrams:</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/78a09173b91596b43f62aac286e5bbc85d1959df.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Transitions are connectors between elements on UML State Machine Diagrams. They represent the logical movement from one state
+                                             to another state, according to the event that triggers a change of state.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Transitions are defined using:       
+                                          <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Trigger Event </span>(a label describing the stimulus that is required to cause a transition).
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">A <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Guard Condition</span> (a Boolean expression).
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">If the stated <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Guard Condition</span> is true at the time, the Transition is enabled; otherwise, it is disabled.       
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Effect</span>: the subsequent behaviour in the system as a result of the transition.
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Transitions are represented by a solid directed line, with an arrow at the end of the Transition. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The Transition must always be labelled with a Trigger condition.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A Transition&#8217;s label may optionally include a Guard Condition as well as a Behaviour Expression. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The syntax of the labelling upon a Transition connector is:</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11 x-p-2-33" lang="en-US"
+                                   xml:lang="en-US"><span><span><span style="background-color: #f0f0f0; ">[ trigger ]&#8239;[&#8239;guard condition&#8239;] [&#8239;'/'&#8239;behaviour-expression&#8239;].</span></span></span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Self-Transition</span></span>:
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/04dcbc33c5c407043ef87532e7623d98abbfe14f.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Self-Transition on a UML State Machine Diagram occurs where following a Transition being triggered and the resulting actions
+                                             taking place, and the routine is still left in the same state.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The Triggering event and subsequent actions still take place but the State following this action remains the same.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Self-Transition is represented as a Transition that points back to the originating element.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The Transition is labelled with a Trigger condition.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table></span></div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.61.5.3" lang="en-US" xml:lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%" />
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                         xml:lang="en-US">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                            style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                            xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                          xml:lang="en-US">Figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">state machine diagram example</span></a></span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.61.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>

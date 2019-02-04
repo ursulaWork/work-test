@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>Business Information Model Artefact (Adopted Notations)Introduction oNext: Information Analysis Model (IAM) - (Product Description)</title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="BIMAdoptedNotations-386EDBB3"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.119.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.119.1"
+              lang="en-US"
+              xml:lang="en-US">Business Information Model Artefact (Adopted Notations)
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; "></span><span xmlns="" style="font-family: Arial; font-weight: bold; "></span>               </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Information Analysis Model (IAM) - (Product Description)</a></span></span></div>
+         </div><span class=" x-titlealts-2-0" lang="en-US" xml:lang="en-US"></span><div class=" x-prolog-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US" xml:lang="en-US"><span class=" x-keywords-2-0" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="BusinessInformationModelAdoptedNota-E8D2A619"></a></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">This section outlines the Adopted Notations for the Business Information Model (BIM) Artefact (<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">for example figure see: BIM &#8212; example diagram</span>):
+               <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" id="TheBIMRepresentsClassElementsAlongW-0CA1F4B6"
+                                   lang="en-US"
+                                   xml:lang="en-US">The BIM Artefact represents Class Elements and their Associations.</div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">These BIM Artefact specific adopted notations should also be read in conjunction with the Generic Class Model Artefacts Adopted
+                                 Notations.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">BIM&#8217;s shall only be developed using the <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">approved</span></span> CASE Toolset or documentation approach.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">All Class Elements on a BIM <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">must</span></span>:
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Be named to represent the data / information concept being modelled.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Have a brief description in the metadata notes as well as an alias (a numbering device that denotes that unique entity &#8212; this
+                                                   is usually achieved by the CASE Toolset, or documentation approach).
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">When elaborated on a BIM Diagram all Class Elements <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">must</span></span> use the <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">standard</span> form of class element.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Class Elements on BIM&#8217;s <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">must not</span></span> have attributes OR operations applied to them
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">All Associations on a BIM <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">must</span></span>:
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Be named (explaining the reason for the relationship).</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Show &#8216;directed&#8217; associations.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Not have or show multiplicities / cardinalities.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Not have any constraints applied to them.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Whilst providing an overview of a domains information and business concepts, not all of the concepts represented on a BIM
+                                 will necessarily be taken forward for analysis; 
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">The BIM aims to provide an overview of the domain to assist analysts and others to understand the wider context of the areas
+                                                   taken forward for analysis.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Large or unwieldy BIM Diagrams can also be split, using &#8216;Composite&#8217; Class Diagrams or Extract Diagrams to aid navigability
+                                                   / readability<span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">, as defined by the methodology being used</span></span>.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">A BIM Artefact will probably be created in a workshop environment with stakeholders, it uses a basic subset of class modelling
+                                 notation to support easier understanding:
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">It may also be appropriate to create a BIM using preexisting domain or analysis artefacts, e.g. BIM, BPMs, and / or Stakeholder
+                                                   Business Model as input.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">The BIM should be created using business terminology, capturing concepts that are important and recognisable to business users.
+                                 This is the reason why no constraints are applied to BIM classes.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Where a class may ultimately represents a system, avoid referencing particular systems; i.e. use logical generic terms for
+                                 example &#8216;orderingService&#8217;.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">All actors identified within the Use Case Model should be represented as entities within the BIM. Representation as a generalised
+                                 class is acceptable. The BIM may also show additional actors which are not represented elsewhere to present a more complete
+                                 overview of the domain.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">BIM&#8217;s are not intended to be definitive documents, so they will not capture the entire information requirement and associated
+                                 flows; however it is intended that the content should be understandable and recognisable to business users.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US"><span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">In accordance with the Methodology, the BIM is a formal publishable artefact. </span></span>At the point of publication the BIM should be correct and consistent with the rest of the artefacts in the Model.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">A BIM diagram may be annotated using notes but these <span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">will</span></span> be of a general business nature rather than representing formal elements such as constraints.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                         lang="en-US"
+                         style="table-layout: fixed; "
+                         xml:lang="en-US">
+                     <col style="width: 0pt" />
+                     <col style="width: 12pt" />
+                     <col />
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                           <td>
+                              <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Development of the BIM is iterative in nature and may be updated during the lifecycle of the project:
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                             </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">When the BIM is first created, the focus of attention may be on a particular aspect of the domain. This may lead to the initial
+                                                   model being more developed in some areas than others. Subsequent work may shift the focus yet again onto different areas of
+                                                   the domain and move development onto those aspects of the model.
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.119.5.2" lang="en-US" xml:lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%" />
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                         xml:lang="en-US">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                            style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                            xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Figure: BIM &#8212; example diagram</span></a></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2" lang="en-US" xml:lang="en-US"><span style="color: #C0C0C0; "><span style="visibility: hidden; ">o</span>&#9679;<span style="visibility: hidden; ">o</span></span><span xmlns="" profilecode="1"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">UML Class Model (Core Notations)</a></span></span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.119.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>

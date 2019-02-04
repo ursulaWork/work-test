@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>Multiplicities (and Cardinalities)Introduction oNext: Multiplicities (Core Notations)</title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="GenericMultiplicityDefinition-05E54E87"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.74.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.74.1"
+              lang="en-US"
+              xml:lang="en-US">Multiplicities (and Cardinalities)
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; "></span><span xmlns="" style="font-family: Arial; font-weight: bold; "></span>               </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Multiplicities (Core Notations)</a></span></span></div>
+         </div><span class=" x-titlealts-2-0" lang="en-US" xml:lang="en-US"></span><div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0 x-p-2-1" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="Multiplicity-F21AC5C9"></a><a xmlns="" class="indexterm" name="Cardinality-F21ACB66"></a><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US"><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Multiplicities (or cardinalities) denote how many of an entity must or may exist in relation to another entity (e.g. &#8216;one
+                        to many&#8217; / &#8216;many to many&#8217; or &#8216;<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">n</span> to <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">n</span>&#8217;). From the information shown, the options for the number of entities that must / may exist can be deduced (e.g. 1..* denotes
+                        there must always be one of the first object, and at least one or many of the second object)</span></span></span><div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- The terms &#8216;Multiplicity&#8217; and &#8216;Cardinality&#8217; are used interchangeably in this publication (unless otherwise specifically stated).</span></div>
+            </div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Example figures showing the application of Multiplicities / Cardinalities are available within the content defining each of
+                  its uses (via the links provided)</span>.
+            </div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The purpose of a Multiplicity is to specify how many of an entity may / must exist for a given processing situation.</div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US"><span class=" x-ph-1-0 x-ph-1-2" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Multiplicities may be applied in the following modelling contexts</span></span>:
+            </div>
+            <div class=" x-table-1-0" id="styler-id1.1.1.74.4.5" lang="en-US" xml:lang="en-US">
+               <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      class=" x-tgroup-1-0"
+                      style="width: 100%; ">
+                  <colgroup>
+                     <col style="width: 38.5%; " />
+                     <col style="width: 61.5%; " />
+                  </colgroup>
+                  <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                     <tr class=" x-row-1-0">
+                        <td bgcolor="#000099" class="entry-in-tbody"
+                            style="background-color: #000099; padding: 7px; border-right-style: dotted; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Diagram Type</span></span></span></span></span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td bgcolor="#000099" class="entry-in-tbody"
+                            style="background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Multiplicity application</span></span></span></span></span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody" rowspan="2"
+                            style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #ffffff; border-bottom-style: none; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">UML Classes / Class Diagrams</span></span> 
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Multiplicities represented on Associations</a><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: none; border-left-style: solid; border-left-width: 1.0pt; border-left-color: #000000; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Attribute Multiplicities</a><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The construction / use of UML Multiplicities and Cardinalities are outlined in their Core Notations; they may also be further
+               defined by the content for each diagram-type that utilises them.
+            </div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.74.4.7" lang="en-US" xml:lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%" />
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                         xml:lang="en-US">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                            style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                            xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                          xml:lang="en-US">Multiplicities and Cardinalities (Core Notations)</a></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2" lang="en-US" xml:lang="en-US"><span style="color: #C0C0C0; "><span style="visibility: hidden; ">o</span>&#9679;<span style="visibility: hidden; ">o</span></span><span xmlns="" profilecode="1"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">UML Class Model</a></span></span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.74.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>

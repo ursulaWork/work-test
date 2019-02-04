@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>Use Case Model (Core Notations)IntroductionoSubsection/s: Use Case Diagram (Core Notations) &#9679; Use Case Element, Constraints and Metadata (Core Notations) oNext: UML Sequence Diagram and Model </title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="UseCaseModelCoreNotations-386B0814"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.57.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.57.1"
+              lang="en-US"
+              xml:lang="en-US">Use Case Model (Core Notations)
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Subsection/s: </span> <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Use Case Diagram (Core Notations)</a> &#9679; <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Use Case Element, Constraints and Metadata (Core Notations)</a>            </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">UML Sequence Diagram and Model</a></span></span></div>
+         </div><span class=" x-titlealts-2-0" lang="en-US" xml:lang="en-US"></span><div class=" x-prolog-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US" xml:lang="en-US"><span class=" x-keywords-2-0" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="UseCaseModelCoreNotations-2D608411"></a></span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">This section outlines the Core Notations that may be used to develop Use Case Models. It also includes subsections for Use
+                  Case Diagram, and separately Use Case Element, Core Notations (for an example of these notations elaborated in context, see
+                  the figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">use case model (diagram) example</span>):</span></div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.57.5.2" lang="en-US" xml:lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%" />
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                         xml:lang="en-US">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                            style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                            xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                          xml:lang="en-US">Figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">use case model (diagram) example</span></a></span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class=" x-section-1-0" id="UseCaseDiagramCoreNotations-E8439575" lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="UseCaseDiagramCoreNotations-E843382B"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.57.5.3.3" lang="en-US" xml:lang="en-US">UML Use Case Diagram Core Notations<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The following table outlines the Core Notations for elaborating Use Case Diagrams</div>
+               <div class=" x-table-1-0" id="styler-id1.1.1.57.5.3.5" lang="en-US" xml:lang="en-US">
+                  <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                         class=" x-tgroup-1-0"
+                         style="width: 100%; ">
+                     <colgroup>
+                        <col style="width: 32.20338983050847%; " />
+                        <col style="width: 28.53107344632768%; " />
+                        <col style="width: 39.26553672316384%; " />
+                     </colgroup>
+                     <thead class=" x-thead-1-0"
+                            style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                        <tr class=" x-row-1-0">
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"> <span><span><span style="color: #ffffff; ">Entity</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#3549D9" class="entry-in-tbody"
+                               style="text-align: left; background-color: #3549D9; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Definition / Context</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Core Notations</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Elements</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/809f85787e8d0bed7a9d5fd9eb69085719871c04.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Use Case Elements individually define the discrete process for the named Use Case.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Use Case Elements may also be represented as Composite Elements to denote the elaboration of subordinate behaviours (identifiable
+                                          using a &#8216;spectacle&#8217; symbol).
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                   xml:lang="en-US">The full Core Notations for Use Case Elements and Composite Use Case Elements, as well as for a range of Use Case Element
+                                 constraints and metadata are available as a separate table (see the subsection:<span class=" x-i-1-0" lang="en-US" xml:lang="en-US"> UML Use Case Element, Constraints and Metadata [Core Notations]</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><a xmlns="" class="indexterm" name="ActorElementInUseCaseModels-FA584F6A"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Actor Element</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/0fc0741c06e72cf2e1a332e8cf1665c6149dbddb.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Actor Elements define the various roles (human or system) that interact with Use Cases; to trigger and / or to receive input(s),
+                                             from individual Use Cases.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Actors are represented on UML Use Case Diagrams using a stick-person symbol.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The name of the actor should be meaningful in the context of the domain.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Actor hierarchy can be implied using the Generalise / Generalization relationship.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Where an Association goes from an Actor to a Use Case element this indicates that the Actor    plays a role in performing
+                                 the Use Case.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Actors are related to other entities on diagrams.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><a xmlns="" class="indexterm" name="BoundaryRegions-FA5799B1"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Boundary Regions</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/820320e6c3a0304b1514d3c57f0e08281b1d543f.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Boundary Region on a Use Case Diagram encloses all the Elements that represent the &#8216;system&#8217; functionality being modelled.
+                                             It also defines the point were roles (Actors) interface with the system</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Boundary Region is represented as a rectangle shape use to represent the system; it can be labelled to describe the context
+                                 for the boundary  
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Use Cases are held inside the boundary region.    whereas Actors are placed outside of it.    </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The use of Boundary Regions is optional.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><a xmlns="" class="indexterm" name="UseCaseDiagramAssociations-FA4EBB03"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Associations on Use Case Diagrams</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">example figures are shown against each usage</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US"><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3" lang="en-US" xml:lang="en-US">UML Use Case Diagrams utilise a range of Associations (as connectors) to define the nature of the relationship between Use
+                                                Cases, as well as with or between Actor Elements</span>.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">An Association is shown as a line between two diagram elements (e.g. Use Case and Use Case, Actor and Actor, or Actor and
+                                 Use Case).
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">An Association may also be labelled as well as indicating the direction in which it should be read. Notations will vary according
+                                 to Association type.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Constraints may NOT be recorded against Associations.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Undefined or &#8216;Standard&#8217; Association</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/d4a0d3ebcda37d70b2f05d0310a620781bfc0966.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">An Undefined or &#8216;Standard&#8217; Association indicates a a relationship between the connected Elements (e.g. Use Case and Use Case,
+                                             Actor and Actor, or Actor and Use Case).</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Where the Association is between an Actor and a Use Case, it indicates that the Actor plays a role in performing the Use Case
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                   xml:lang="en-US">An Undefined or &#8216;Standard&#8217; Association is represented as a plain line between the two connected Elements (it has no further
+                                 notation).
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Include Association</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/aad978d80d3e16628dde492c1f4de26d9a58e983.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">An Include Association between Use Case Elements indicates that one Use Case contains the functionality of another use case
+                                             as part of their normal processing.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">The Include Association is represented by a dotted line with an open arrowhead (pointing to the Use Case to be included).
+                                 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The line is labelled &lt;&lt;include&gt;&gt; .
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Extend Association</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/aad978d80d3e16628dde492c1f4de26d9a58e983.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Extend Associations indicates that one Use Case can extend the behaviour of another, typically when exceptional circumstances
+                                             are encountered.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Extend Associations are represented by dotted line with an open arrowhead (pointing from the Use Case that contains the extra
+                                 behaviour to the main Use Case).    
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The line is labelled &lt;&lt;extend&gt;&gt;.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The conditions under which this piece of processing is to be triggered should be stated,    preferably as a Business Rule.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Generalise / Generalization Associations</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/c75f68f3aedbcd940103bb44113c2d578f8862ca.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US"> A Generalise / Generalization Association is used to indicate inheritance. Drawn from the specific classifier to a general
+                                             classifier, the generalization's implication is that the source inherits the target's characteristics.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A Generalise Association on a Use Case Diagram can be used to generalise Actors or Use Cases:
+                                          <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">To share or &#8216;inherit&#8217; the association relationships of parent element.</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">A &#8216;child&#8217; element to specialize a parent element.</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Depending upon in which direction it is read it the relationship becomes either a &#8216;Generalization&#8217; or a &#8216;Specialization&#8217; Association.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Generalise / Generalization Associations are represented using a solid line with a filled arrow, pointing to the generalised
+                                 element.    
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Generalise / Generalization Associations can only be used to point to the same type of element (e.g. between Actors or between
+                                 Use Cases &#8212; but NOT between Actors and Use Cases).
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">See below for separate notations defining Generalization Associations between Actors and Use Case Elements
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Generalise / Generalization Associations</span></span> <span class=" x-i-1-0" lang="en-US" xml:lang="en-US"> - between Use Cases</span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/9a6d8739b7db57355e7f0117e6f7e8a081eec6bd.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Generalise / Generalization Association  between Use Cases identifies where the behaviour of the specialised Use Case replaces
+                                             the behaviour of the generalised Use Case.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The Generalised Use Case could also be an considered an abstract Use Case that holds all the common behaviours. </div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Generalization is used when you find two or more use cases that have commonalities in behaviour, structure, and purpose. 
+                                          The Specialised Use Cases holds the more specific additional behaviours &#8212; the general goals for each Use Case should be the
+                                          same
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                   xml:lang="en-US">Generalise / Generalization Associations are represented using a solid line with a filled arrow, pointing to the generalised
+                                 Use Case Element.    
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Generalise / Generalization Associations</span></span> <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">&#8212; between Actors</span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/3f42795f76b5542c15083242b2525aa0c8c64c0a.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Generalise / Generalization Association  between actors illustrates the differences in responsibilities of the users of
+                                             a system. The &#8216;specialised&#8217; Actor can perform all the activities of the &#8216;generalised&#8217; role as well as any specific aspects
+                                             of its own role.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                   xml:lang="en-US">Generalise / Generalization Associations are represented using a solid line with a filled arrow, pointing to the generalised
+                                 Actor Element.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Realization / Realize Association</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/0456f16c755432699c8ab5bc80da290a1912aa43.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Realization / Realize Association identifies where a Use Case Element &#8216;realises&#8217; or implements the goals / aims or specifications
+                                             of a non-Use Case (e.g. where a Use Case realises a Requirements Element).</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Realization / Realize Associations can be created between a Use Case and other types of elements.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A Realization / Realize Association is represented as a dashed line with a solid-filled arrowhead. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The source element realises the destination element (e.g. the one it points to).</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The line is labelled &lt;&lt;realises&gt;&gt;.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-dl-1-0" id="styler-id1.1.1.57.5.3.6" lang="en-US" xml:lang="en-US">
+                  <table border="0" cellpadding="7" width="">
+                     <col width="100%" />
+                     <tbody>
+                        <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                            xml:lang="en-US">
+                           <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                               style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                               xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">Use Case Diagram Artefact (Product Description)</a></span></span></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class=" x-section-1-0" id="UseCaseElementAdoptedNotations-E83E93A9"
+                 lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="UseCaseElementAndConstraintCoreNota-E8433433"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.57.5.4.3" lang="en-US" xml:lang="en-US">UML Use Case Element, Constraints and Metadata (Core Notations)<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">This table outlines the Core Notations for Use Case Elements, as well as their Constraints and Metadata:</div>
+               <div class=" x-table-1-0" id="styler-id1.1.1.57.5.4.5" lang="en-US" xml:lang="en-US">
+                  <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                         xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                         class=" x-tgroup-1-0"
+                         style="width: 100%; ">
+                     <colgroup>
+                        <col style="width: 32.20338983050847%; " />
+                        <col style="width: 28.53107344632768%; " />
+                        <col style="width: 39.26553672316384%; " />
+                     </colgroup>
+                     <thead class=" x-thead-1-0"
+                            style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                        <tr class=" x-row-1-0">
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"> <span><span><span style="color: #ffffff; ">Entity</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#3549D9" class="entry-in-tbody"
+                               style="text-align: left; background-color: #3549D9; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Definition / Context</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                           <th bgcolor="#000099" class="entry-in-tbody"
+                               style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                            lang="en-US"
+                                            xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Core Notations</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><a xmlns="" class="indexterm" name="UseCaseElement-FA583347"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Element (and Use Case Constraints)</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/809f85787e8d0bed7a9d5fd9eb69085719871c04.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Use Case Elements individually define a discrete process. The completion of that process should return an observable result.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Use Case Elements are represented as an ellipse  with the name of the Use Case inside it.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The name should be a meaningful expression (verb / phrase) in the context of the domain.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">A Use Case Element&#8217;s metadata may also contain:
+                                 <div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- The content relating to Use Case metadata (e.g. Constraints) may or may not be shown on Diagrams, as required.</span></div>
+                                 <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Textual description.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Constraint information:
+                                                   <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                                      <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                                             lang="en-US"
+                                                             style="table-layout: fixed; "
+                                                             xml:lang="en-US">
+                                                         <col style="width: 0pt" />
+                                                         <col style="width: 12pt" />
+                                                         <col />
+                                                         <tbody>
+                                                            <tr valign="baseline">
+                                                               <td align="right"></td>
+                                                               <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                               </td>
+                                                               <td>
+                                                                  <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Triggers, Goals, Pre and Post Conditions.</div>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </div>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                           lang="en-US"
+                                           style="table-layout: fixed; "
+                                           xml:lang="en-US">
+                                       <col style="width: 0pt" />
+                                       <col style="width: 12pt" />
+                                       <col />
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                             <td>
+                                                <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Definitions for Main and Alternate Paths.</div>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Core Notations are also available for UML Use Case Diagrams (see the subsection:<span class=" x-i-1-0" lang="en-US" xml:lang="en-US"> Use Case Diagram [Core Notations]</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                   xml:lang="en-US"><a xmlns="" class="indexterm" name="CompositeUseCase-FA583C68"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Composite Use Case Element</span></span></div>
+                              <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                                 <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                       xml:lang="en-US"><img alt="Image" height="176"
+                                         src="graphics/187569b867b4a7a0ebfbfd1ea685b76b42a78620.png"
+                                         style="max-width: 100%; "
+                                         width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Composite Use Case Elements denote subordinate behaviours; these are elaborated on a separate diagram.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Composite Use Case Elements are represented as Use Case Elements that include a "spectacle" symbol.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">This Element links to a subsidiary diagram which further elaborates the Use Case.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case - Basic Path</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">The &#8216;Basic Path&#8217; for a Use Case defines the usual steps that take place in order to achieve its intended goal.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Basic Paths are textually defined metadata statements captured within the element. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Label as: "basic path". </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Basic Paths can also be additionally described by a Scenario or as part of an Activity Diagram.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case - Alternate Path</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">The &#8216;Alternate Paths&#8217; for a Use Case defines  when a use case diverts from the basic path. Alternate Paths define the processing
+                                             to be undertaken when a known or planned event causes a deviation from the Basic Path.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Alternate Paths are textually defined metadata statements captured within the element. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Label as: "alternative path".</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The Alternate Paths should also include the business rule that indicates the condition that causes the deviation from the
+                                 basic path.
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Alternate Paths can also be additionally described by a Scenario or as part of an Activity Diagram.
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Constraint - Trigger</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US"> A Trigger Event documents the stimulus that is required to cause a Use Case to commence its processing / functionality.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Use Cases will normally have only one Trigger event; however if more than one Trigger is identified then care is required
+                                          and several questions must be addressed, such as:
+                                          <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Do all the Trigger events need to have occurred before the use case can start?</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Does each Trigger lead to exactly the same flow(s)?</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Is there an order in which the Trigger events need to occur?    </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Triggers may be identified as the result of the invocation of a business rule.
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Triggers are textually defined metadata statements captured within the element.</div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Label as a Constraint - type: &#8216;trigger&#8217;
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Constraint- Goal</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A &#8217;Goal&#8217; for a Use Case<span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3" lang="en-US" xml:lang="en-US"> or User Story</span> states its defined aim upon completion. When the processing completes successfully, the stated goal must have been achieved</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Goals are textually defined metadata statements captured within the element. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Label as a Constraint - type: &#8216;goal&#8217;
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Constraint - Pre-Condition</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                            xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">A Pre-Conditions is something that must have happened or a specific state of  something prior to that Use Case or User Story
+                                             commencing its processing. The Use Case<span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3" lang="en-US" xml:lang="en-US"> or User Story</span> cannot start until all stated Pre-Conditions are true.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Pre-Conditions are textually defined metadata statements captured within the element. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Label as a Constraint - type: &#8216;pre-condition&#8217;
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-left-style: none; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Use Case Constraint - Post-Condition</span></span> 
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">(<span class=" x-i-1-0" lang="en-US" xml:lang="en-US">no figure - only visible as metadata</span>)
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                               style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; "><span><span><span style="">
+                                       <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US"> Post-Conditions define the outcomes that are to exist when processing is concluded.</span></div>
+                                       <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">There are two types of Post Condition:
+                                          <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">A &#8216;Successful&#8217; Post-Condition is the outcome when processing runs as planned.</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                                    lang="en-US"
+                                                    style="table-layout: fixed; "
+                                                    xml:lang="en-US">
+                                                <col style="width: 0pt" />
+                                                <col style="width: 12pt" />
+                                                <col />
+                                                <tbody>
+                                                   <tr valign="baseline">
+                                                      <td align="right"></td>
+                                                      <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                                      <td>
+                                                         <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">A &#8216;Guaranteed&#8217; Post-Condition is the outcome when processing encounters an error.</div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody"
+                               style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; ">
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Post-Conditions are textually defined metadata statements captured within the element. </div>
+                              <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Label as a Constraint - type: &#8216;post-condition&#8217;
+                                 <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-dl-1-0" id="styler-id1.1.1.57.5.4.6" lang="en-US" xml:lang="en-US">
+                  <table border="0" cellpadding="7" width="">
+                     <col width="100%" />
+                     <tbody>
+                        <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                            xml:lang="en-US">
+                           <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                               style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                               xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">Use Case Element (Product Description)</a></span></span></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.57.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>

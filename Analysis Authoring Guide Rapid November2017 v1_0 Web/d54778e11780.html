@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>Model Version ControlsIntroductionoSubsection/s: Formal Version Control &#9679; Local Version Control &#9679; Model Changes - History and Log &#9679; Model and File Naming oNext: Managing Analysis Model Content </title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="VersionControl-25DA27A4"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.19.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.19.1"
+              lang="en-US"
+              xml:lang="en-US">Model Version Controls
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Subsection/s: </span> <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Formal Version Control</a> &#9679; <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Local Version Control</a> &#9679;  <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Model Changes - History and Log</a> &#9679; <a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Model and File Naming</a>        </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Managing Analysis Model Content</a></span></span></div>
+         </div><span class=" x-titlealts-2-0" lang="en-US" xml:lang="en-US"></span><div class=" x-prolog-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US" xml:lang="en-US"><span class=" x-keywords-2-0" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="VersionControl-ABA9025D"></a><a xmlns="" class="indexterm" name="Model-VersionControl-ABA9045B"></a></span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">This section outlines the Version Controls and related approaches for Analysis Models and their artefacts.</div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The methodologies define their approaches to version control for Models and their Artefacts as either &#8216;formal&#8217; or &#8216;local&#8217;.
+               These controls maybe applied either to the Model as a whole or individually to each of its Artefacts / Documents. In addition
+               a change history log is used to record any changes that may result in a new / up-issued version of a Model. Version Control
+               also governs some aspects of the naming of Model Files.
+               <div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- Where any part of an Analysis Model is circulated outside of <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">Data Products</span>, Authors should ensure that the correct version control information is recorded on the circulated models.</span></div>
+            </div>
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">Further content relating to model Version Controls include:</div>
+            <div class=" x-table-1-0" id="styler-id1.1.1.19.5.4" lang="en-US" xml:lang="en-US">
+               <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      class=" x-tgroup-1-0"
+                      style="width: 100%; border-left-style: hidden; border-top-style: hidden; border-right-style: hidden; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">
+                  <colgroup>
+                     <col style="width: 100%; " />
+                  </colgroup>
+                  <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                     <tr class=" x-row-1-0">
+                        <td bgcolor="#000099" class="entry-in-tbody"
+                            style="background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Section Title</span></span></span></span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: none; border-left-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Formal Version Control</a>.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: none; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Local Version Control</a>.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: none; border-left-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Model Changes - History and Log</a>.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-10 x-p-2-11" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Model and File Naming</a>.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class=" x-section-1-0" id="FormalVersionControl-E7B4F0CF" lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="d54778e12052"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.19.5.5.3" lang="en-US" xml:lang="en-US">Formal Version Control<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">Formal Version Controls for Analysis Models are managed as part of <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">NHS Digital</span>&#8217;s File and Document Management System (this currently utilises the tool: <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span>); this is the organisation&#8217;s repository for all content released for publication or external distribution (for other forms
+                  of version control see the section: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Local Version Controls</span>).
+                  <div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- All Analysis Models held within <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span> must also adhere to all of the formal model publication and output rules for Analysis Projects.</span></div>
+               </div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">All Analysis Model Artefacts (as well as any other formal Documents / Artefacts etc.) must adhere to the rules and conditions
+                  surrounding the use of <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span>, including an ID. The ID classifies the content within <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span> as part of the <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">Data Products</span> Model Library, as well as including a version identifier.
+               </div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">Version identifiers for Files are created upon the initial upload of a Model File to <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span>; these are automatically amended by by the tool whenever a File is up-issued, adding a further increment to the final two
+                  digits. (e.g. up-issuing file: &#8216;NPFIT-SHR-MODL-GUID-0014.04&#8217; changes its ID to &#8216;NPFIT-SHR-MODL-GUID-0014.05&#8217;).
+                  <div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- Where Distributed / Multiple Authoring is employed to develop Analysis Models, Local Version Controls may also be temporarily
+                        used in addition to the File&#8217;s ID (prior to publication and outside of <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span>), under the control of the Model Custodian.</span></div>
+               </div>
+            </div>
+            <div class=" x-section-1-0" id="LocalVersionControl-E7B54704" lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="d54778e12111"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.19.5.6.3" lang="en-US" xml:lang="en-US">Local Version Control<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">Where distributed / multiple authoring is utilised to develop Analysis Models, the Model Custodian may use a Local Version
+                  Control approach to identify versions of the Model file authored by different people.
+               </div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The following outlines the rules for their use:
+                  <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                     <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                            lang="en-US"
+                            style="table-layout: fixed; "
+                            xml:lang="en-US">
+                        <col style="width: 0pt" />
+                        <col style="width: 12pt" />
+                        <col />
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                              <td>
+                                 <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Local Version Control should only be used by Authors during a Model / Artefact&#8217;s development (e.g. to support reviews or for
+                                    distributed / multiple authoring).
+                                    <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Local Version Control identifiers should take the form of an addition appended to the <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span> ID and should only be recorded within a Model File as part of its own metadata &#8212; NOT as part of its formal File ID
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Local Version identifiers are superseded in ALL cases by the formal File ID (as part of the Formal Version Control Approach)
+                                                      &#8212; and MUST be removed from Model Files prior to their being published / uploaded / up&#8211;issued to the Model Library / <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Formal File ID version numbers within the Model Library / <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span> may not always coincide with Local Version Control identifiers; any inconsistencies between Local and Formal Version Identifiers
+                                                      must always be resolved and Local Identifiers removed by the Model Custodian prior to uploading / up-issuing the Model to
+                                                      the Model Library / <span class=" x-term-1-0" lang="en-US" xml:lang="en-US">FileCM</span></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                     <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                            lang="en-US"
+                            style="table-layout: fixed; "
+                            xml:lang="en-US">
+                        <col style="width: 0pt" />
+                        <col style="width: 12pt" />
+                        <col />
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                              <td>
+                                 <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Local Version Control for Models or Artefacts should use a numbering system that is an addition to and after the formal file
+                                    ID:
+                                    <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">On the navigation page of a model a separate &#8216;Version No&#8217; heading should be created at the top of the page, against which
+                                                      any Local Version numbering should be recorded:
+                                                      <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                                         <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins"
+                                                                lang="en-US"
+                                                                style="table-layout: fixed; "
+                                                                xml:lang="en-US">
+                                                            <col style="width: 0pt" />
+                                                            <col style="width: 12pt" />
+                                                            <col />
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9642;</span> 
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">n1: the Main version number indicates significant changes in the models status or contents 
+                                                                        <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                                                           <table cellpadding="0" class=" x--listitem-as-table x-li-9-0 x--zero-left-margins"
+                                                                                  lang="en-US"
+                                                                                  style="table-layout: fixed; "
+                                                                                  xml:lang="en-US">
+                                                                              <col style="width: 0pt" />
+                                                                              <col style="width: 12pt" />
+                                                                              <col />
+                                                                              <tbody>
+                                                                                 <tr valign="baseline">
+                                                                                    <td align="right"></td>
+                                                                                    <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9643;</span> 
+                                                                                    </td>
+                                                                                    <td>
+                                                                                       <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">For initial drafts of a model, n1 is set as 0 (i.e. 0.1 to 0.n), n1 is incremented to 1 (e.g. 1.0) on model approval</div>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins"
+                                                                lang="en-US"
+                                                                style="table-layout: fixed; "
+                                                                xml:lang="en-US">
+                                                            <col style="width: 0pt" />
+                                                            <col style="width: 12pt" />
+                                                            <col />
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9642;</span> 
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">n2: the Minor version number indicates small changes in the models status or contents</div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins"
+                                                                lang="en-US"
+                                                                style="table-layout: fixed; "
+                                                                xml:lang="en-US">
+                                                            <col style="width: 0pt" />
+                                                            <col style="width: 12pt" />
+                                                            <col />
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9642;</span> 
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">To identify Multiple authors it may also be useful to also append their shortcode as a form of Local Version Control, after
+                                                                        any version identifiers - e.g. &#8216;FormalFileID_0.5_jobl&#8217; during development
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                         <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins"
+                                                                lang="en-US"
+                                                                style="table-layout: fixed; "
+                                                                xml:lang="en-US">
+                                                            <col style="width: 0pt" />
+                                                            <col style="width: 12pt" />
+                                                            <col />
+                                                            <tbody>
+                                                               <tr valign="baseline">
+                                                                  <td align="right"></td>
+                                                                  <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9642;</span> 
+                                                                  </td>
+                                                                  <td>
+                                                                     <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="VersionControlUsingSVN-1E735A52"></a>When a Model is &#8216;branched&#8217; within a Subversion (SVN) Repository to support Distributed Authoring:
+                                                                        <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                                                           <table cellpadding="0" class=" x--listitem-as-table x-li-9-0 x--zero-left-margins"
+                                                                                  lang="en-US"
+                                                                                  style="table-layout: fixed; "
+                                                                                  xml:lang="en-US">
+                                                                              <col style="width: 0pt" />
+                                                                              <col style="width: 12pt" />
+                                                                              <col />
+                                                                              <tbody>
+                                                                                 <tr valign="baseline">
+                                                                                    <td align="right"></td>
+                                                                                    <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9643;</span> 
+                                                                                    </td>
+                                                                                    <td>
+                                                                                       <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Where different versions of a Model are developed using SVN (e.g. for &#8216;as is&#8217; and &#8216;proposed&#8217; versions of a Model), each should
+                                                                                          have details of the version type added to its file identifier: e.g. &#8216;FileName_n2.1_Proposed&#8217;
+                                                                                       </div>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                           <table cellpadding="0" class=" x--listitem-as-table x-li-9-0 x--zero-left-margins"
+                                                                                  lang="en-US"
+                                                                                  style="table-layout: fixed; "
+                                                                                  xml:lang="en-US">
+                                                                              <col style="width: 0pt" />
+                                                                              <col style="width: 12pt" />
+                                                                              <col />
+                                                                              <tbody>
+                                                                                 <tr valign="baseline">
+                                                                                    <td align="right"></td>
+                                                                                    <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; ">&#9643;</span> 
+                                                                                    </td>
+                                                                                    <td>
+                                                                                       <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">A &#8216;branched&#8217; version of a model would not normally be formally published (e.g. it would not have its own FileCM ID); unless
+                                                                                          the versions require formal publication (e.g. for traceability or parallel development within the project&#8217;s scope) &#8212; where
+                                                                                          it is necessary to formally publish a branched Model, each version should remain related to the &#8216;base&#8217; Model during development,
+                                                                                          and only becomes a distinct Model in its own right with an individual FileCM ID, at the end of the project (otherwise any
+                                                                                          &#8216;shared&#8217; components or mutual links could be lost)
+                                                                                       </div>
+                                                                                    </td>
+                                                                                 </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                        </div>
+                                                                     </div>
+                                                                  </td>
+                                                               </tr>
+                                                            </tbody>
+                                                         </table>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-section-1-0" id="ModelChanges-HistoryAndLog-E7B57DD5" lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="ChangeHistory-ABA8F62D"></a><a xmlns="" class="indexterm" name="ChangeHistoryLog-ABA8F38B"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.19.5.7.4" lang="en-US" xml:lang="en-US">Model Changes - History and Log<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">One of the main reasons for up-issuing or creating new &#8216;versions&#8217; of Models are when changes are made to the content. Part
+                  of managing a Models&#8217; Version Control is ensuring that a record is kept of all changes to it; this formally utilises the Model
+                  Change History Log. The Model Change History Log may also developed and maintained outside of the Model.
+               </div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">The following aspects of this approach should be understood:
+                  <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                     <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                            lang="en-US"
+                            style="table-layout: fixed; "
+                            xml:lang="en-US">
+                        <col style="width: 0pt" />
+                        <col style="width: 12pt" />
+                        <col />
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                              <td>
+                                 <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="d54778e12274"></a>The formal approach defined by the Methodology uses a <span class=" x-term-1-0" id="ModelChangeHistoryLog-8F5419D3" lang="en-US"
+                                          xml:lang="en-US">Model Change History Log</span> (available as a template from FileCM using ID: NPFIT-SHR-MODL-GUID-0005, to create a document which details specific changes
+                                    made to the Model. These are captured for every Model version increment (the Model is then &#8216;up-issued&#8217; according to either
+                                    the formal or local Version Control mechanisms). The Log should always be embedded into the Model:
+                                    <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">It should be held in the Related Documents Package and must be made a selectable item within the Model Management and Documents
+                                                      area of the Navigation Page.
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                            lang="en-US"
+                            style="table-layout: fixed; "
+                            xml:lang="en-US">
+                        <col style="width: 0pt" />
+                        <col style="width: 12pt" />
+                        <col />
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                              <td>
+                                 <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">As an informal process where a CASE Toolset is being used:
+                                    <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Authors should note that the approach defined by the chosen methodology takes precedence, and any notable changes must always
+                                                      be transferred and recorded in the Model Change History Log.
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                              lang="en-US"
+                                              style="table-layout: fixed; "
+                                              xml:lang="en-US">
+                                          <col style="width: 0pt" />
+                                          <col style="width: 12pt" />
+                                          <col />
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                </td>
+                                                <td>
+                                                   <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Any changes recorded using a toolset&#8217;s change recording processes must be transferred to the formal Change History Log, and
+                                                      then removed from the Model prior to publication.
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                            lang="en-US"
+                            style="table-layout: fixed; "
+                            xml:lang="en-US">
+                        <col style="width: 0pt" />
+                        <col style="width: 12pt" />
+                        <col />
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                              <td>
+                                 <div class=" x-p-2-0 x-p-2-4" lang="en-US" xml:lang="en-US">Formally Publishable Artefacts may be subject to Project Controls; and are only to be published / distributed as an integral
+                                    part of the Model File
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-dl-1-0" id="styler-id1.1.1.19.5.7.7" lang="en-US" xml:lang="en-US">
+                  <table border="0" cellpadding="7" width="">
+                     <col width="100%" />
+                     <tbody>
+                        <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                            xml:lang="en-US">
+                           <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                               style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                               xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">Project Controls</a></span></span></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <div class=" x-section-1-0" id="ModelAndFileNaming-E7B6109E" lang="en-US"
+                 xml:lang="en-US"><a xmlns="" class="indexterm" name="ModelFileNaming-ABA8FE57"></a><span class=" x-ph-1-0 x-ph-1-2 x-ph-1-3 x-ph-1-6" lang="en-US" xml:lang="en-US"></span><div class=" x-title-2-0" id="styler-id1.1.1.19.5.8.3" lang="en-US" xml:lang="en-US">Model and File Naming<span style="font-size: 8pt; visibility: hidden; ">spacer
+                     text</span></div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">When creating a Model / Project File for the first time, it should be named using the name (or accepted short-name) for the
+                  Analysis domain (e.g. a file titled for &#8216;Mental Health&#8217; might also be referred to as &#8216;MH&#8217;). 
+               </div>
+               <div class=" x-p-2-0" lang="en-US" xml:lang="en-US">Where the Model revisits Analysis for an old Project then either the existing file title maybe used (or amended to reflect
+                  current nomenclatures &#8212; e.g. where the project name has changed). If the same Project name is used for a new file then a version
+                  number for the file should be added as a suffix to the File ID (for details see the section: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">File ID meaning</span>).
+                  <div class=" x-sl-1-0" lang="en-US" xml:lang="en-US"><span class=" x-sli-1-0" lang="en-US" xml:lang="en-US"><span style="font-weight: bold; color: #FF0000; ">NOTE: </span>- Where new analysis is being continued using a pre-existing Analysis Project file, then any new work should be clearly identified
+                        within the Model using identifiers added to folders / diagrams, as appropriate.</span></div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.19.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>

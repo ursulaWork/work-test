@@ -1,0 +1,373 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="keywords" content="qtg_Class" scheme="atiChunkerMeta"><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css">
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css">
+      <title>UML Class Model and Class Diagram (Core Notations)</title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-15-0" id="Concepts_Technq_Class_ClassModels-D777F819" lang="en-US">
+         <div class=" x-title-17-0 x-title-17-1 x-title-17-2 x-title-17-3 x-title-17-4" id="styler-id1.1.1.4.7.7.7.1" lang="en-US">UML Class Model <span class=" x-ph-1-0" lang="en-US"><span profilecode="1">and Class Diagram </span></span>(Core Notations)
+         </div><span class=" x-titlealts-6-0"></span><div class=" x-abstract-1-0" lang="en-US"><span class=" x-tt-1-0" lang="en-US">ConUMLClsMdlCN</span><a href="#Concepts_Technq_Class_ClassModels-D777F819" class=" x-xref-8-0 x-xref-8-8" lang="en-US"><span class=" x--sfe-CrossReference-1-0"> </span>UML Class Model <span class=" x-ph-1-0" lang="en-US"><span profilecode="1">and Class Diagram </span></span>(Core Notations)</a><div class=" x-table-2-0 x-table-2-2" id="styler-id1.1.1.4.7.7.7.3.3" lang="en-US">
+               <div class=" x-title-46-0" id="styler-id1.1.1.4.7.7.7.3.3.1" lang="en-US">Development History</div>
+               <table class=" x-tgroup-1-0" style="border-left-style: solid; border-left-width: 1.0pt; border-left-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">
+                  <colgroup>
+                     <col style="width: 9.647302904564315%; ">
+                     <col style="width: 5.601659751037344%; ">
+                     <col style="width: 5.394190871369294%; ">
+                     <col style="width: 14.522821576763485%; ">
+                     <col style="width: 30.186721991701244%; ">
+                     <col style="width: 34.64730290456431%; ">
+                  </colgroup>
+                  <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                     <tr class=" x-row-1-0">
+                        <th class="entry-in-tbody" style="text-align: left; vertical-align: top; padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; border-left-style: solid; border-left-width: 1.0pt; border-left-color: #000000; ">Date</th>
+                        <th class="entry-in-tbody" style="text-align: left; vertical-align: top; padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; ">Ver.</th>
+                        <th class="entry-in-tbody" style="text-align: left; vertical-align: top; padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; ">Inc.</th>
+                        <th class="entry-in-tbody" style="text-align: left; vertical-align: top; padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; ">Author</th>
+                        <th class="entry-in-tbody" style="text-align: left; vertical-align: top; padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; ">Amendment</th>
+                        <th class="entry-in-tbody" style="text-align: left; padding: 0px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: solid; border-top-width: 1.0pt; border-top-color: #000000; ">&nbsp;</th>
+                     </tr>
+                  </thead>
+                  <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-left-style: solid; border-left-width: 1.0pt; border-left-color: #000000; ">April 2010</td>
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">0</td>
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">1</td>
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">Ross Dixon</td>
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">Migration content from Word Authoring Guide v2.0</td>
+                        <td class="entry-in-tbody" style="padding: 7px; border-right-style: solid; border-right-width: 1.0pt; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; ">Draft</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-prolog-1-0" lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US"><span class=" x-keywords-2-0" lang="en-US"><a class="indexterm" name="ClassModelCoreNotations-2CBF45C2"></a><span class=" x-keyword-1-0" lang="en-US">
+                     <ch:meta content="qtg_Class" name="keywords"></ch:meta></span></span><span class=" x-data-1-0" lang="en-US">qtg-cla</span><span class=" x-data-1-0" lang="en-US">qtg-uml</span><span class=" x-data-1-0" lang="en-US">qtg-cnt</span><span class=" x-data-1-0" lang="en-US">qtg-mod</span><span class=" x-data-1-0" lang="en-US">qtg-dia</span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US">
+            <div class=" x-p-6-0" lang="en-US"><span profilecode="1">This table outlines the individual Elements, Associations and other modelling concepts, as well as the Core Notations that
+                  may be utilised in the elaboration of a UML Class Diagram within UML Class Models (for an example of some of these notations
+                  in context, see the figure: <span class=" x-i-1-0" lang="en-US">class model elaborated using a class diagram</span>):</span></div>
+            <div class=" x-table-2-0 x-table-2-1" id="styler-id1.1.1.4.7.7.7.5.2" lang="en-US"><span profilecode="1">
+                  <table class=" x-tgroup-1-0" style="width: 100%; ">
+                     <colgroup>
+                        <col style="width: 32.20338983050847%; ">
+                        <col style="width: 28.53107344632768%; ">
+                        <col style="width: 39.26553672316384%; ">
+                     </colgroup>
+                     <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                        <tr class=" x-row-1-0">
+                           <th bgcolor="#000099" class="entry-in-tbody" style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"> <span><span><span style="color: #ffffff; ">Entity</span></span></span></span></div></span></span></span></th>
+                           <th bgcolor="#3549D9" class="entry-in-tbody" style="text-align: left; background-color: #3549D9; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span><span><span style="color: #ffffff; ">Definition / Context</span></span></span></span></div></span></span></span></th>
+                           <th bgcolor="#000099" class="entry-in-tbody" style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span><span><span style="color: #ffffff; ">Core Notations</span></span></span></span></div></span></span></span></th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; border-left-style: none; ">
+                              <div class=" x-p-6-0" id="ClassElements-EE7C71D3" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Class Elements</span></span></div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/f55516cf28c95a85dc0d4a907fe2935d6b2a75e4.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“Class Elements represents a defined information or data concept.”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; ">
+                              <div class=" x-p-6-0" lang="en-US">Class Elements are represented as a rectangular box, with the name of the Class inside it. </div>
+                              <div class=" x-p-6-0" lang="en-US">The name of a class should be meaningful in the context of the domain. The use of camel case for the class name is optional.
+                                 
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">A brief description clearly explaining the purpose and nature of the Class should also be added to the element within its
+                                 metadata. 
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">A class may be split into three sections:
+                                 <div class=" x-ul-1-0" lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins" lang="en-US" style="table-layout: fixed; ">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">•&nbsp;</td>
+                                             <td><span class=" x-p-1-0" lang="en-US">Top section - Class name.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins" lang="en-US" style="table-layout: fixed; ">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">•&nbsp;</td>
+                                             <td><span class=" x-p-1-0" lang="en-US">Middle section -  Attributes.</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins" lang="en-US" style="table-layout: fixed; ">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">•&nbsp;</td>
+                                             <td><span class=" x-p-1-0" lang="en-US">Third section -  Operations. </span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Class — Attributes</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/77f8498b5f5b51e19389213d62d7726da545845a.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“Attributes define the properties of individual data entities within a class. ”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">Class Attributes can have their own properties applied to them (e.g. Datatypes). </div>
+                                       <div class=" x-p-6-0" lang="en-US">Attribute Multiplicities show how many instances of each Attribute must / may exist for that Class.</div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #d0d0d0; ">
+                              <div class=" x-p-6-0" lang="en-US">A Class’s Attributes are captured as metadata content within the Element.</div>
+                              <div class=" x-p-6-0" lang="en-US">They can be displayed as a list in the second section of the Class Element.</div>
+                              <div class=" x-p-6-0" lang="en-US">Attribute names should be meaningful and use ‘camel case’ notation.  </div>
+                              <div class=" x-p-6-0" lang="en-US">Class Attributes can be classified as being Public (+), Private (-), Protected (#) or Package — shown in front of the Attribute’s
+                                 name. 
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">The attribute information can include:
+                                 <div class=" x-ul-1-0" lang="en-US">
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins" lang="en-US" style="table-layout: fixed; ">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">•&nbsp;</td>
+                                             <td><span class=" x-p-1-0" lang="en-US">A short description of the attribute (recommended). </span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <table cellpadding="0" class=" x--listitem-as-table x-li-10-0 x--zero-left-margins" lang="en-US" style="table-layout: fixed; ">
+                                       <col style="width: 0em">
+                                       <col style="width: 18pt">
+                                       <col>
+                                       <tbody>
+                                          <tr valign="baseline">
+                                             <td align="right"></td>
+                                             <td align="left" style="word-break: keep-all; ">•&nbsp;</td>
+                                             <td><span class=" x-p-1-0" lang="en-US">Multiplicities notation: [n..n] .  A multiplicity of [1..1] is the default and not displayed</span></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Class — Operations</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/fd24494ad17dba4ffb394b5e050f26b86be76003.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“<span class=" x-ph-1-0" lang="en-US">Class Operations represent the behaviour or services that a Class supports.</span>”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">Operations can be applied to a Class or its Attributes.</div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">Operations are captured as metadata content within the Class Element</div>
+                              <div class=" x-p-6-0" lang="en-US">They can be displayed as a list in the third section of a Class Element.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: dotted; border-right-width: 0.50pt; border-right-color: #d0d0d0; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Abstract Class</span></span></div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/6e429714698fd8562892587e4bbe674af2b7ba1e.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: dotted; border-right-width: 0.50pt; border-right-color: #d0d0d0; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“An Abstract Class represent abstract characteristics (attributes and / or operations) which are inherited or extended by
+                                             its ‘child’ classes when they are instantiated (Abstract Classes are not instantiated). ”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">An Abstract Class is represented as a Class Element, with its name shown in italics on Class Diagrams.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: dotted; border-right-width: 0.50pt; border-right-color: #d0d0d0; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Association Class</span></span></div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/213d5bd833395a040d85e046aa4fb29c72652738.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: dotted; border-right-width: 0.50pt; border-right-color: #d0d0d0; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“An Association Class is a UML construct that enables an Association to have Attributes and Operations (features). ”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">An Association Class is represented as a Class connected by a dotted line to a directed Association between two Classes. </div>
+                              <div class=" x-p-6-0" lang="en-US">Association Classes should NOT have Associations to any other Classes outside of this defined relationship.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><a xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions" xmlns:xs="http://www.w3.org/2001/XMLSchema" class="indexterm" name="ClassDiagramAssociations-FA4E29F9"></a><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Associations on Class Diagrams</span></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“<span class=" x-ph-1-0" lang="en-US">Associations on Class Diagrams are used to represent the different types of relationship between Classes</span>.”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">An Association is shown as a line between two Classes; it may also be labelled and indicate the direction in which it should
+                                 be read. Notations may vary according to Association type.
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">Constraints may NOT be recorded against Associations. </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Non-directional (or ‘Standard’) Association</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/283e97a52093bc339f9162b2bab7b906549653f6.png" style="max-width: 100%; " width="253"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“A Non-directional (or ‘Standard’) Association on a Class Diagram denotes that the most basic form of relationship exists
+                                             between elements.”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">A Non-directional Association is shown as a line between two classes; it can be read in either direction (so has no arrows
+                                 to denote directionality).
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">Multiplicities may also be shown next to each element at the ends of an Association. </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Directed Association</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="175" src="graphics/a8a653c1926b3cf5b75671311b04b2f5579bd605.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“A Directed Association between Classes shows the direction of an Association (implying precedence).”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">The Association may be constrained by the Multiplicities of the Classes as represented on the Connector, in the direction
+                                          of the arrow head.
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US"> A Directed Association is denoted by a line with an open arrowhead(s) between the Classes.</div>
+                              <div class=" x-p-6-0" lang="en-US">This Association type should also show the Multiplicity of each element at the ends of the Association.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Inheritance Association</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/68d31e46324096a47e5304d2fd1344cf70882217.png" style="max-width: 100%; " width="253"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“An Inheritance Association on a Class Diagram allows Classes to share or ‘inherit’ the Attributes / Operations and Association
+                                             relationships of a ‘parent’ Class, as well as for the ‘child’ class/es to specialize the ‘parent’ class.”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">Depending upon which direction the Association is read, it can be defined as either a ‘Generalization’ or a ‘Specialization’
+                                          Association.
+                                       </div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">Inheritance Associations are denoted by a solid line between the Classes with an ‘empty’ arrowhead at the ‘parent’ Class end.
+                                 
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">Multiplicity is invalid for this association.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Aggregation Association</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/50570e66ca439f5630ce072d2ad3acad03333afa.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“An Aggregation Association is a type of association that identifies an element as either containing or composed of other
+                                             elements. It is used to show how more complex elements (aggregates) are built from a collection of simpler elements.”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">An Aggregation Association on a Class Diagram defines a relationship where Classes are ‘a part of’ a whole entity.</div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">Aggregate Associations are represented by a line between Classes with a diamond at the ‘whole’ end of the Association.   
+                                 
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">Multiplicity may be shown at the ‘component’ Class end of the Association.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Composition Association</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/a8a32da9950c3b656ebf98375d7c60b09d7f6781.png" style="max-width: 100%; " width="252"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“A Composition Association is a strict form of Aggregation. The ‘part’ can belong to only one Composite Aggregation at a time.”</span></div>
+                                       <div class=" x-p-6-0" lang="en-US">If the composite is deleted, all of its parts are deleted along with it.</div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                              <div class=" x-p-6-0" lang="en-US">Composite (Aggregate) Associations are denoted by a line between Classes with a filled or solid diamond at the ‘whole’ end
+                                 of the line.
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US">Multiplicity may be shown at the component class end of the Association</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-1-0">
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-left-style: none; ">
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US">Class Multiplicities on Associations</span></span>:
+                              </div>
+                              <div class=" x-p-6-0" lang="en-US"><span class=" x-image-2-0 x-image-2-6" lang="en-US"><img alt="Image" height="176" src="graphics/4755db18aa2b1e6554a7a2c1de189a8257853c79.png" style="max-width: 100%; " width="253"></span></div>
+                           </td>
+                           <td bgcolor="#f0f0f0" class="entry-in-tbody" style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; "><span><span><span style="">
+                                       <div class=" x-p-6-0" lang="en-US"><span class=" x-q-1-0" lang="en-US">“Class Multiplicities may be represented on the Association between Classes to show how many of each must / may exist for
+                                             the relationship shown (<span class=" x-i-1-0" lang="en-US">except for Inheritance Associations</span>).”</span></div></span></span></span></td>
+                           <td class="entry-in-tbody" style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; ">
+                              <div class=" x-p-6-0" lang="en-US">Multiplicity is represented in the ‘n..n’ format (e.g. 1..*), and can be placed at either end of the Association.</div>
+                              <div class=" x-p-6-0" lang="en-US">Also see section: <span class=" x-i-1-0" lang="en-US">Multiplicities represented on Associations</span>.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table></span></div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.4.7.7.7.5.3" lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%">
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; ">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0" lang="en-US" style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "><span><span><span style=""><span class=" x-b-1-0" lang="en-US"><span class=" x-i-1-0" lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0" lang="en-US">“<a href="WEB2520Map2520Rapid252011_172520001-sect3sect2sect2.html#ClassModelElaboratedUsingAClassDiag-07668A3B" class=" x-xref-8-0 x-xref-8-8" lang="en-US"><span class=" x--sfe-CrossReference-1-0"> </span><span class=" x-i-1-0" lang="en-US">Figure: class model elaborated using a class diagram</span></a>”</span><span class=" x-q-1-0" lang="en-US">“<span profilecode="1"><a href="WEB2520Map2520Rapid252011_172520001-sect4sect12.html#BusinessInformationModelArtefactPro-BDD3365A" class=" x-xref-8-0 x-xref-8-8" lang="en-US"><span class=" x--sfe-CrossReference-1-0"> </span>Business Information Model Artefact (Product Description)</a>”</span></span><span class=" x-q-1-0" lang="en-US">“<span profilecode="1"><a href="WEB2520Map2520Rapid252011_172520001-sect4sect13.html#InformationAnalysisModelIAMProductD-E4F10733" class=" x-xref-8-0 x-xref-8-8" lang="en-US"><span class=" x--sfe-CrossReference-1-0"> </span>Information Analysis Model Artefact (Product Description)</a>”</span></span><span class=" x-q-1-0" lang="en-US">“”</span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-related-links-1-0">
+            <div class=" x--ufe-relatedlinks-display-1-0">
+               <div class=" x--ufe-relatedHierarchical-1-0 x--ufe-relatedHierarchical-1-1">
+                  <div class=" x--ufe-related-links-title-1-0" id="styler-idu1.1.1.4.7.7.7.6.1.1.1">Related Links</div>
+                  <div class=" x--ufe-relatedChild-1-0"></div>
+                  <div class=" x--ufe-relatedParent-1-0">
+                     <div class=" x-link-2-0"><a href="WEB2520Map2520Rapid252011_172520001-sect3sect2sect2.html#Concepts_UML_Concept_ClassModels-D777DD1F"><span class=" x-linktext-2-0 x-linktext-2-5" lang="en-US">UML Class Model (Parent Topic)</span></a></div>
+                  </div>
+               </div>
+               <div class=" x--ufe-relatedPrevious-1-0"></div>
+               <div class=" x--ufe-relatedNext-1-0"></div>
+               <div class=" x--ufe-relatedConcepts-1-0"></div>
+               <div class=" x--ufe-relatedTasks-1-0"></div>
+               <div class=" x--ufe-relatedReferences-1-0"></div>
+               <div class=" x--ufe-relatedTopics-1-0"></div>
+               <div class=" x--ufe-relatedOther-1-0"></div>
+               <div class=" x--ufe-relatedLinklists-1-0"></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

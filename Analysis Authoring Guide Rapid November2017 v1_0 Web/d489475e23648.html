@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">if (document.location == top.document.location) {
+  var docNewLocation = "default.htm?startat=" + document.location.pathname;
+    if (document.location.hash)
+     docNewLocation += "&amp;hash=" + document.location.hash.substr(1);
+	    document.location = docNewLocation;}
+</script>
+      <style type="text/css">.viewpath {display: none;} .viewlinks {display: none;}</style><link href="css/styler.css" rel="stylesheet" type="text/css" />
+      <link href="css/styler_custom.css" rel="stylesheet" type="text/css" />
+      <title>UML Activity Diagram (Core Notations)Introduction oNext: UML Class Model</title>
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:RoutingRuleDescription msdt:dt="string">AGRapidv1_0</mso:RoutingRuleDescription>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   <body class=" x-map-1-0" lang="en-US" xml:lang="en-US" id="mapelement_map1">
+      <div xmlns:ch="http://www.arbortext.com/namespace/chunker" class=" x-topic-1-0"
+           id="Technqs_ActivDiag-F3E9859C"
+           lang="en-US"
+           xml:lang="en-US">
+         <div class=" x-table-1-0" id="styler-id1.1.1.53.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 56.99999999999999%; " />
+                  <col style="width: 43%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0" style="vertical-align: middle; ">
+                     <td class="entry-in-tbody"
+                         style="text-align: left; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; border-left-style: none; "><span xmlns=""
+                              style="font-size: 10pt; font-family: Arial; font-style: normal; font-weight: normal; color: #808080; "> <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Data Products</span></span> </span> - <span class=" x-ph-1-0" id="AnalysisAuthoringGuide-294FF209" lang="en-US"
+                                 xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">Analysis Authoring Guide</span></span></span> <span class=" x-ph-1-0" id="LightGenericRapid-4CCD0A29" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">(&#8216;Rapid&#8217; Methodology) </span></span></span></span></td>
+                     <td class="entry-in-tbody"
+                         style="text-align: right; height: 48px; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #000000; border-top-style: none; "><span style="font-size: 10pt; font-style: normal; color: #808080; "><span class=" x-ph-1-0" id="ApprovedAlphaBeta-0FE936C3" lang="en-US" xml:lang="en-US"><span class=" x-term-1-0 x-term-1-3" id="Approved-38B51030" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" id="Beta-38B5135F" lang="en-US" xml:lang="en-US"></span></span> v<span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">1.0</span></span> <span class=" x-term-1-0 x-term-1-1" id="AlphaVersRapid-0F6EC683" lang="en-US"
+                                    xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span> - <span class=" x-ph-1-0" lang="en-US" xml:lang="en-US"> <span class=" x-term-1-0 x-term-1-3" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-1" lang="en-US" xml:lang="en-US"></span><span class=" x-term-1-0 x-term-1-2" lang="en-US" xml:lang="en-US"></span></span></span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-title-1-0 x-title-1-1 x-title-1-2" id="styler-id1.1.1.53.1"
+              lang="en-US"
+              xml:lang="en-US">UML Activity Diagram (Core Notations)
+            <div class=" x-p-2-0 x-p-2-1 x-p-2-35"><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">Introduction</a><span class=" x-ph-1-0"><span style="font-style: italic; color: #8A9CD9; "><span style="visibility: hidden; "></span><span xmlns="" style="font-family: Arial; font-weight: bold; "></span>               </span></span><span class=" x-ph-1-0"><span style="font-style: italic; color: #808080; "><span style="visibility: hidden; ">o</span><span xmlns="" style="font-family: Arial; font-weight: bold; ">Next: </span><a class=" x-xref-1-0 x-xref-1-1" lang="en-US" xml:lang="en-US">UML Class Model</a></span></span></div>
+         </div>
+         <div class=" x-prolog-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-metadata-1-0" lang="en-US" xml:lang="en-US"><span class=" x-keywords-2-0" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="GenericCoreNotationsForActivityDiag-29B9F67F"></a></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span><span class=" x-data-1-0" lang="en-US" xml:lang="en-US"></span></div>
+         </div>
+         <div class=" x-body-1-0" lang="en-US" xml:lang="en-US">
+            <div class=" x-p-2-0" lang="en-US" xml:lang="en-US"><span xmlns="" profilecode="1">This table outlines the individual Elements, Flows and other modelling concepts as well as Core Notations that may be utilised
+                  in the elaboration of UML Activity Diagrams (for an example of most of these notations in context, see the figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">activity diagram example</span>):</span></div>
+            <div class=" x-table-1-0" id="styler-id1.1.1.53.4.2" lang="en-US" xml:lang="en-US">
+               <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                      class=" x-tgroup-1-0"
+                      style="width: 100%; ">
+                  <colgroup>
+                     <col style="width: 32.20338983050847%; " />
+                     <col style="width: 28.53107344632768%; " />
+                     <col style="width: 39.26553672316384%; " />
+                  </colgroup>
+                  <thead class=" x-thead-1-0"
+                         style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                     <tr class=" x-row-1-0">
+                        <th bgcolor="#000099" class="entry-in-tbody"
+                            style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; border-left-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                         lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"> <span><span><span style="color: #ffffff; ">Entity</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></th>
+                        <th bgcolor="#3549D9" class="entry-in-tbody"
+                            style="text-align: left; background-color: #3549D9; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                         lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Definition / Context</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></th>
+                        <th bgcolor="#000099" class="entry-in-tbody"
+                            style="text-align: left; background-color: #000099; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-top-style: none; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-7 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11"
+                                         lang="en-US"
+                                         xml:lang="en-US"><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span><span><span style="color: #ffffff; ">Core Notations</span></span></span></span><div class=" x-p-2-0 x-p-2-7 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></th>
+                     </tr>
+                  </thead>
+                  <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="InitialActivityAndCoreNotations-780D7C84"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Initial Activity Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/ee74098f058010ba949e88c8f7e08f797930594a.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">The Initial Activity when &#8216;triggered&#8217; commences the processing defined by the activity diagram</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Initial Activity Elements are represented as a small solid black circle element with the label &#8216;InitialActivity&#8217;, along with
+                              any other name for this element; it has a single outgoing flow.
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">If this diagram is &#8216;referred to&#8217; by another diagram the name of the referring diagram should also be added at this point.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">There can only be one Initial Activity on a Diagram.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="ActivityElementAndCoreNotations-780D884E"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Activity Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/7f2d061e7239a3ff7be0fe18059400f9bc5531ce.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">An Activity element organises and specifies the participation of subordinate behaviours, such as sub-Activities or Actions,
+                                          to reflect the control and data flow of a process.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Activity Elements are represented as round corner boxes with the name of the process/activity showing inside. </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Each Activity represents a &#8216;whole&#8217; single activity which itself is part of the overall process being described.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="CompositeActivityAndCoreNotations-780D948E"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Composite Activity Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/5be13b6d5a82dff89eae06480b56a4bbadd9c7ba.png"
+                                      style="max-width: 100%; "
+                                      width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Composite Activity Elements denote subordinate behaviours; these are elaborated on a separate diagram.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Composite Activity Elements are represented as Activity Elements that include a "spectacle" symbol.    </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">This element links to a &#8216;composite&#8217; diagram to elaborate the sub-process/es required to achieve the &#8216;parent&#8217; Activity.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="ActionElementAndCoreNotations-780DA6F5"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Action Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/c1f472ce95c7b2854b39eed2c7cb7b19cabc623c.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">An Action Element describes a basic process or transformation that occurs within a system, and is the basic functional unit
+                                          within an Activity Diagram.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Action elements are represented as round corner boxes with the name of the action showing inside.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Actions have no further decomposition in the activity containing them.  The execution of a single action may trigger  the
+                              execution of other actions.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="DecisionElementAndCoreNotations-780DAE6C"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Decision Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/9834fa774a41bdb5113c5001902a9f6f5bb5e2ef.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Decision Elements represent the point where there is an option as to which    outgoing Flow is to be taken.</span></div>
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">A single incoming Flow triggers the    Decision. The Guard Condition must be satisfied for the flow to be actioned. The combination
+                                       of Guard Conditions from a single Decision Element should represent ALL possible conditions from the Decision.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">The Decision Element is a diamond shape. It is labelled  with the decision needed as a question or condition.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Guard Conditions are displayed on the outgoing Flows from a Decision Element.  For example:  [yes], [no] or another stated
+                              condition &#8212; such as: [do a].
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="MergeElementAndCoreNotations-780DB60D"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Merge Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/5dce7df1dd18ff38ea9458c608c614d615965cec.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Merge Elements (an Exclusive Or) enable Discontinuous Flows or inputs on an Activity Diagram to join back into a single Flow.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">The Merge Element is a diamond shape with no Guard Conditions or decision text attached to it.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The Merge may have multiple Flows into it, but must only have one outgoing Flow. </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">To aid users it may have a label denoting it as a &#8216;Merge&#8217;, with a number to identify it.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="FlowFinalAndCoreNotations-780DBE28"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Flow Final Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/9708f093e95d054ec6d0946754bae3f4d4920b2a.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">The FlowFinal when &#8216;fired&#8217; terminates only the flow leading to the flow final i.e. other flows continue to execute.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">A FlowFinal is represented as small black circle outline with a diagonal cross within it. It has a single incoming flow. Label:
+                              &#8216;FlowFinal&#8217; along with any other name for this element.
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">If the FlowFinal leads to another Activity Diagram then the name of the &#8216;referring onto&#8217; diagram name may also be added
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="ActivityFinalAndCoreNotations-780DC5A7"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">ActivityFinal Element</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/f8d5d641250fd408da0cd5f4af1da359b735508f.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">An ActivityFinal when &#8216;fired&#8217; terminates all processing on the diagram. Control is passed to the parent activity (or ends
+                                          the whole process if the diagram describes a self-contained process).</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">ActivityFinal elements are represented as a small solid black circle enclosed within a circle outline. It has a single incoming
+                              flow.    Labelled &#8216;ActivityFinal&#8217; along with any other name for this element.
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">If the ActivityFinal leads to another Activity Diagram then the name of the &#8216;referring onto&#8217; diagram name may also be added
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="SwimlanesAndCoreNotations-780DCCDC"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Swimlanes</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/43f11dd174096363ba687a5e095df1de7dd4942d.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Swimlanes are defined areas on the  Diagram representing an Actor role.  Swimlane Regions may represent either Human or System
+                                          roles. The role takes responsibility for the Elements represented within that swimlane.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Swimlane regions are annotated by vertical or horizontal divisions across the diagram. Each Swimlane should be labelled for
+                              the role that it is representing. 
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Activities must be placed clearly within one of the Swimlanes identified for a Diagram (they may not sit over the division
+                              between Swimlane regions). Flows are allowed to cross any divisions between Swimlane regions
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="EventRegionsAndCoreNotations-780DD44A"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Event Regions</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/edaf4c11259d87ba64f293071df4397c1eb1b30e.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Event Regions are defined areas on Activity Diagrams.  The elements in the region may be affected by an &#8216;Interrupt Event&#8217;
+                                          that can impact the processing flow.  </span></div>
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Any Activity outside of the Interrupt Region cannot be interrupted by the &#8216;event&#8217;.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Event Regions are show as a labelled area bounded by a dotted line. </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">An &#8216;Interrupt Flow&#8217; links the element denoting the &#8216;Interrupt Event&#8217; with the first &#8216;Interruption Handler&#8217; Activity.     
+                              
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Within the Event Region:
+                              <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                 <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                        lang="en-US"
+                                        style="table-layout: fixed; "
+                                        xml:lang="en-US">
+                                    <col style="width: 0pt" />
+                                    <col style="width: 12pt" />
+                                    <col />
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                          <td>
+                                             <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">A &#8216;Receive&#8217; element (the &#8216;event&#8217;) is labelled as either &#8216;Interrupt Event&#8217; or &#8216;Receipt Event&#8217;:
+                                                <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                                   <table cellpadding="0" class=" x--listitem-as-table x-li-11-0 x--zero-left-margins"
+                                                          lang="en-US"
+                                                          style="table-layout: fixed; "
+                                                          xml:lang="en-US">
+                                                      <col style="width: 0pt" />
+                                                      <col style="width: 12pt" />
+                                                      <col />
+                                                      <tbody>
+                                                         <tr valign="baseline">
+                                                            <td align="right"></td>
+                                                            <td align="left" style="word-break: keep-all; "><span xmlns="" style="font-family: Arial; color: #FF0000; ">&#9702;</span> 
+                                                            </td>
+                                                            <td>
+                                                               <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Any Activities may be &#8216;interrupted&#8217; (Interruptible Activities).</div>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </div>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>Outside the Event Region:
+                              <div class=" x-ul-1-0 x-ul-1-1" lang="en-US" xml:lang="en-US">
+                                 <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                        lang="en-US"
+                                        style="table-layout: fixed; "
+                                        xml:lang="en-US">
+                                    <col style="width: 0pt" />
+                                    <col style="width: 12pt" />
+                                    <col />
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                          <td>
+                                             <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">&#8216;Interruption Handler&#8217; Activities (the Exception Handler Element), to deal with its consequences.</div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table cellpadding="0" class=" x--listitem-as-table x-li-12-0 x--zero-left-margins"
+                                        lang="en-US"
+                                        style="table-layout: fixed; "
+                                        xml:lang="en-US">
+                                    <col style="width: 0pt" />
+                                    <col style="width: 12pt" />
+                                    <col />
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; ">&#8226; </td>
+                                          <td>
+                                             <div class=" x-p-2-0 x-p-2-4 x-p-2-5" lang="en-US" xml:lang="en-US">Upon completion of any &#8216;Interruption Handler&#8217; Activities processing either re-joins the normal Flow using a Merge Element;
+                                                or terminates the processing cycle using a FlowFinal Activity.
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="ExpansionRegionsAndCoreNotations-780DDD7A"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Expansion Regions</span></span></div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/b16706a601075f16c34f2d2fbbe4dc9dd594bddf.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">
+                                       <div class=" x-q-1-0 x-q-1-4" lang="en-US" xml:lang="en-US"><span style="font-size: 5pt; "><br class="empty" /></span>Expansion regions are defined areas on Activity Diagrams. They enclose a group of ActivityNodes and ActivityEdges that are
+                                          to be executed several times on the incoming data - once for every element in the input collection.
+                                       </div>  
+                                    </div>
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The concurrency of the Expansion Region's multiple executions can be specified by type as either &#8216;Parallel&#8217;, &#8216;Iterative&#8217; or
+                                       &#8216;Stream&#8217;.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US">They show as a labelled region with a dotted line stereotyped according to the type of expansion region.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="ParallelExpansionRegionsAndCoreNota-780DE6D3"></a><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US">Parallel Expansion Regions</span>:</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">&#8216;Parallel&#8217; Expansion Regions reflect that the elements in the incoming collections can be processed at the same time or overlapping.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 0px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "> </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="IterativeExpansionRegionsAndCoreNot-780DEF86"></a><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US">Iterative Expansion Regions</span>:</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">&#8216;Iterative&#8217; Expansive Region concurrency specifies that execution must occur sequentially.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 0px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "> </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="StreamExpansionRegionsAndCoreNotati-780DF8A0"></a><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US">Stream Expansion Regions</span>:</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">&#8216;Stream&#8217; Expansion Region indicates that the input and output come in and exit as streams. </span></div>
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The Expansion Region's process must have some method to support streams.
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 0px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.0pt; border-bottom-color: #b0b0b0; "> </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-3 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US"><a xmlns="" class="indexterm" name="FlowsOnActivityDiagramsAndCoreNotat-780E08C6"></a><span class=" x-b-1-0 x-b-1-1 x-b-1-4" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Flows on Activity Diagrams:</span></span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Flows on UML Activity Diagrams represent the relationships between activities; specifically their ordering, triggering as
+                                          well as any dependencies between Activities.</span></div>
+                                    <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">The following define the main types of Flow available for Activity Diagrams:
+                                       <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">All flows are denoted by a directed line.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Flows should not cross if at all possible but if it is unavoidable all flows should cross at right angles.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Coupled Flows &#8212; where flows are chronologically associated between the same activities (for example a requesting flow and
+                              its response flow) the earlier flow should be positioned above the later flow.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="ControlFlowsAndCoreNotations-780E102B"></a><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Control Flows</span></span>:
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/d38a835f58c47347c63100736d73056f793d6deb.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Control Flows show the direction of the processing flow between Activities, as control moves from one Activity to another.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                xml:lang="en-US">Redundant use of control flows is to be avoided.
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="ObjectFlowsAndCoreNotations-780E17DF"></a><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Object Flows</span></span>:
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/4f27c0474c4d11f54d1952fafab8e605794d77e7.png"
+                                      style="max-width: 100%; "
+                                      width="253" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Object Flows are used to denote the transmission / receipt of a message or document, handled within the process.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: dotted; border-bottom-width: 0.50pt; border-bottom-color: #b0b0b0; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Object Flows are to be named to identify the object being transmitted.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The names of the transmit and receive objects should be hidden and the object name should be added as the Link Name</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">Where the object flow represents a communication it must be associated with &#8216;interrupt events&#8217; that also cater for &#8216;duplication&#8217;
+                              and &#8216;timeout&#8217; events; and so must be encapsulated within an interruptible region.
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">The existence of an object flow implies control flow and does not require an additional control flow structure within the
+                              diagram.
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Where an object flow identifies the object name, the activity name should not refer to the full object name 
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class=" x-row-1-0">
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; border-left-style: none; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US"><a xmlns="" class="indexterm" name="ConcurrentFlowsAndCoreNotations-780E1ED9"></a><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US">Concurrent Flows</span></span>:
+                           </div>
+                           <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">
+                              <div class=" x-p-2-0 x-p-2-24">tablespacer</div><span class=" x-image-2-0 x-image-2-1 x-image-2-3 x-image-2-4" lang="en-US"
+                                    xml:lang="en-US"><img alt="Image" height="176"
+                                      src="graphics/f4fbce61837a93aa47c2b42dcb6b4f0ac020626a.png"
+                                      style="max-width: 100%; "
+                                      width="252" /></span><div class=" x-p-2-0 x-p-2-24">tablespacer</div>
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                        <td bgcolor="#f0f0f0" class="entry-in-tbody"
+                            style="background-color: #f0f0f0; padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; "><span><span><span style="">
+                                    <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-9 x-p-2-10 x-p-2-11" lang="en-US"
+                                         xml:lang="en-US"><span class=" x-q-1-0 x-q-1-4 x-q-1-5" lang="en-US" xml:lang="en-US">Concurrent Flows - Divide a single incoming flow (using Forks and Joins) to trigger Flows and Activities that complete simultaneously.
+                                          Once all processing is complete they are synchronised and re-join the main processing Flow</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                                    </div></span></span></span></td>
+                        <td class="entry-in-tbody"
+                            style="padding: 7px; border-right-style: none; border-bottom-style: solid; border-bottom-width: 1.50pt; border-bottom-color: #808080; ">
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-10" lang="en-US" xml:lang="en-US">Fork/Join elements are used to elaborate Concurrent Flows.</div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9" lang="en-US" xml:lang="en-US">&#8216;Forks&#8217; have a single entry flow. &#8216;Joins&#8217; have a single exit flow. </div>
+                           <div class=" x-p-2-0 x-p-2-8 x-p-2-9 x-p-2-11" lang="en-US" xml:lang="en-US">Outgoing flows from a forks and joins must have no triggers or guard conditions. 
+                              <div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class=" x-dl-1-0" id="styler-id1.1.1.53.4.3" lang="en-US" xml:lang="en-US">
+               <table border="0" cellpadding="7" width="">
+                  <col width="100%" />
+                  <tbody>
+                     <tr class=" x-dlentry-1-0" lang="en-US" style="vertical-align: top; "
+                         xml:lang="en-US">
+                        <td bgcolor="#F6F6F6" class=" x-dt-1-0 x-dt-1-1" lang="en-US"
+                            style="border-collapse: collapse; border-top-style: none; border-left-style: none; border-right-style: none; border-bottom-style: none; "
+                            xml:lang="en-US"><span><span><span style=""><span class=" x-b-1-0 x-b-1-5" lang="en-US" xml:lang="en-US"><span class=" x-i-1-0" lang="en-US" xml:lang="en-US"><span><span><span style="color: #91AFC8; ">Related content:</span></span></span></span><span><span><span style="visibility: hidden; ">&gt;</span></span></span></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2 x-q-1-3" lang="en-US" xml:lang="en-US"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                          xml:lang="en-US">Figure: <span class=" x-i-1-0" lang="en-US" xml:lang="en-US">activity diagram example</span></a></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2" lang="en-US" xml:lang="en-US"><span style="color: #C0C0C0; "><span style="visibility: hidden; ">o</span>&#9679;<span style="visibility: hidden; ">o</span></span><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                          xml:lang="en-US"><span xmlns="" profilecode="1">Activity Diagram Artefact</span></a></span><span class=" x-q-1-0 x-q-1-1 x-q-1-2" lang="en-US" xml:lang="en-US"><span style="color: #C0C0C0; "><span style="visibility: hidden; ">o</span>&#9679;<span style="visibility: hidden; ">o</span></span><span xmlns="" profilecode="1"><a class=" x-xref-1-0 x-xref-1-1 x-xref-1-2 x-xref-1-3" lang="en-US"
+                                             xml:lang="en-US">SBM (Product Description)</a></span></span></span></span></span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class=" x-table-1-0" id="styler-id1.1.1.53.1">
+            <table xmlns:_sf="http://www.arbortext.com/namespace/Styler/StylerFunctions"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   class=" x-tgroup-1-0"
+                   style="width: 100%; ">
+               <colgroup>
+                  <col style="width: 62%; " />
+                  <col style="width: 38%; " />
+               </colgroup>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" colspan="2"
+                         style="height: 28px; padding: 7px; border-right-style: none; border-bottom-style: none; border-top-style: solid; border-top-width: 0.50pt; border-top-color: #b0b0b0; border-left-style: none; ">
+                        <div class=" x-p-2-0 x-p-2-1 x-p-2-8 x-p-2-10 x-p-2-11"><span style="font-size: 9pt; font-style: italic; color: #B0B0B0; ">Copyright
+                              © 2017 Health and Social Care Information Centre.<br class="empty" />NHS
+                              Digital is the trading name of the Health and Social Care Information
+                              Centre.</span><div class=" x-p-2-0 x-p-2-24">After p in entry</div>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table><br class="empty" /></div>
+      </div>
+   </body>
+</html>
